@@ -3,4 +3,5 @@
     <string name="start_stop_btn_start_txt">START</string>
     <string name="start_stop_btn_stop_txt">STOP</string>
     <string name="reset_btn_txt">RESET</string>
+    <string name="time_text_view_init_txt">00:00:00:00</string>
 </resources>

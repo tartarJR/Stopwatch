@@ -18,7 +18,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="00:00:00" />
+            android:text="@string/time_text_view_init_txt" />
 
         <Button
             android:id="@+id/start_stop_btn"
