@@ -5,6 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
 
+    <data>
+
+        <variable
+            name="currentTime"
+            type="String" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -13,12 +20,12 @@
             android:id="@+id/time_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@{currentTime, default=@string/time_text_view_init_txt}"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="@string/time_text_view_init_txt" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/start_stop_btn"
