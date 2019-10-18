@@ -8,6 +8,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.tatar.stopwatch.databinding.ActivityMainBinding
 
+// TODO use MVVM
+// TODO use DI
+// TODO make it run as a background service
+// TODO Provide in app notifications when working in background
+// TODO make it look good and use some animations
+// TODO refactor method/variable names
+// TODO divide methods if possible
 class MainActivity : AppCompatActivity() {
 
     private var hasStarted = false // TODO use ViewModel and DataBinding

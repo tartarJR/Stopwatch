@@ -4,6 +4,8 @@ import android.os.Handler
 import android.os.HandlerThread
 import android.os.Message
 
+// TODO refactor method/variable names
+// TODO divide methods if possible
 class StopwatchWorker : HandlerThread(TAG) {
 
     private var milliSeconds = 0L
@@ -72,7 +74,7 @@ class StopwatchWorker : HandlerThread(TAG) {
 
     fun resetCounting() {
         stopwatchWorkerHandler.removeCallbacks(stopwatchWorkerRunnable)
-        milliSeconds = 0
+        milliSeconds = 0L
         sendCurrentTimeMessageMessage()
     }
 
